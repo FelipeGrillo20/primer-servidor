@@ -2,7 +2,7 @@
 // Importar squelize
 
 const { Sequelize } = require('sequelize');
-require('dotenv').config;
+require('dotenv').config();
 
 // crear una instancia de squelize con la configuracion de conexion
 
@@ -13,7 +13,7 @@ const db = new Sequelize({
     username: process.env.DB_USERNAME,
     password: process.env.DB_PASSWORD,
     dialect: "postgres",
-    dialectOptions:{ssl:{require:true, rejectUnauthorized}}
+    dialectOptions: { ssl: {require: true, rejectUnauthorized: false} }, 
 });
 
 

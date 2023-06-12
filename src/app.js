@@ -3,7 +3,7 @@
 const express = require('express');
 const db = require('./utils/database');
 const Todos = require('./models/todos.model');
-require('dotenv').config;
+require('dotenv').config();
 const cors = require('cors');
 
 
